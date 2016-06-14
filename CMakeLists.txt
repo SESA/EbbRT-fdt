@@ -12,10 +12,10 @@ project(Fdt C)
 
 # Initialize CFLAGS.
 set(CMAKE_C_FLAGS                "-Wall -Werror")
-set(CMAKE_C_FLAGS_DEBUG          "-O0 -g")
+set(CMAKE_C_FLAGS_DEBUG          "-O0 -g3")
 set(CMAKE_C_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
 set(CMAKE_C_FLAGS_RELEASE        "-O4 -flto -DNDEBUG")
-set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g")
+set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g3")
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
